@@ -109,6 +109,9 @@ All models were trained using the 99 extracted features:
 
 ## Results
 
+![Confusion Matrix](confusion_matrix_xgboost.png)
+
+
 
 
 ## 🔜 Next Steps

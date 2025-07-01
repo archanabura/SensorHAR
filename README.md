@@ -137,8 +137,24 @@ All models were trained using the 99 extracted features:
 
 ![Confusion Matrix](images/ConfusionMatrix_xgb_tuned.png)
 
+## Insights
+**Data set**
+The UCI HAR dataset captures realistic, noisy motion data from daily activities.
+Each 2.56s window contains 128 samples per sensor channel at 50Hz.
+9 raw signals (3 axes × 3 signal types) form a rich, multi-dimensional time series.
+Class imbalance is minimal, but class overlap (especially posture-related classes) is significant.
 
+**Feature Engineering**
+I Extracted 99 interpretable features: 11 from each signal (7 time-domain + 4 frequency-domain).
+This reduced the raw time series into a compact but powerful feature set per window.
+Even without advanced signal engineering (e.g., jerk, correlation, angle), these 99 features performed competitively.
 
+**Confusion Pattern Insights**
+LAYING is perfectly classified by all models — very distinct motion signature.
+WALKING vs STAIRS (UP/DOWN) shows consistent confusion across models — these are temporally similar and require jerk/angle features for better separation.
+SITTING vs STANDING is a classic HAR challenge — both are low-motion and orientation-dependent. Needs orientation, correlation, or gyroscope signal emphasis.
+
+Adding jerk, magnitude, correlation, and angle-based features will likely boost performance by another 1–2%.
 
 ## 🔜 Next Steps
 

@@ -107,6 +107,10 @@ All models were trained using the 99 extracted features:
 
 ---
 
+## Results
+
+
+
 ## 🔜 Next Steps
 
 - Add new features: jerk signals, magnitude, orientation angles, axis correlations

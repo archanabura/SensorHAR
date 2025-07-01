@@ -109,7 +109,29 @@ All models were trained using the 99 extracted features:
 
 ## Results
 
+**Logistic Regression**
+
 ![Confusion Matrix](images/ConfusionMatrix_logreg.png)
+
+**Random Forest**
+
+![Confusion Matrix](images/ConfusionMatrix_RF.png)
+
+**SVM with RBF kernel**
+
+![Confusion Matrix](images/ConfusionMatrix_SVC.png)
+
+**MLP**
+
+![Confusion Matrix](images/ConfusionMatrix_MLP.png)
+
+**XGBoost**
+
+![Confusion Matrix](images/ConfusionMatrix_xgb.png)
+
+**XGBoost, tuned**
+
+![Confusion Matrix](images/ConfusionMatrix_xgb_tuned.png)
 
 
 

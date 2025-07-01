@@ -119,11 +119,15 @@ All models were trained using the 99 extracted features:
 
 **SVM with RBF kernel**
 
-![Confusion Matrix](images/ConfusionMatrix_SVC.png)
+![Confusion Matrix](images/ConfusionMatrix_svm.png)
+
+**SVM with grid search hyper parameter tuning**
+
+![Confusion Matrix](images/ConfusionMatrix_svm_gridsearch.png)
 
 **MLP**
 
-![Confusion Matrix](images/ConfusionMatrix_MLP.png)
+![Confusion Matrix](images/ConfusionMatrix_mlp.png)
 
 **XGBoost**
 
